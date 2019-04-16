@@ -9,7 +9,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bd172d-2077-448b-b823-9a7751fdfe78" name="Default Changelist" comment="" />
+    <list default="true" id="05bd172d-2077-448b-b823-9a7751fdfe78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="63" />
-          <entry key="java" value="701" />
+          <entry key="java" value="705" />
           <entry key="properties" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -62,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="63" />
-          <entry key="JAVA" value="701" />
+          <entry key="JAVA" value="705" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -75,22 +78,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListContentProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
+            <state relative-caret-position="254">
+              <caret line="164" column="37" lean-forward="true" selection-start-line="164" selection-start-column="37" selection-end-line="164" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,6 +104,9 @@
       <find>get</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -121,12 +115,12 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/Contract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/EditWordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListContentProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java" />
       </list>
     </option>
   </component>
@@ -135,6 +129,7 @@
     <option name="width" value="754" />
     <option name="height" value="737" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -286,7 +281,7 @@
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Android Profiler" />
       <window_info anchor="bottom" id="Debug" weight="0.5093697" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32931036" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50075644" side_tool="true" weight="0.3253833" />
       <window_info anchor="bottom" id="Build" sideWeight="0.49924356" weight="0.3424191" />
       <window_info anchor="right" id="Device File Explorer" side_tool="true" />
@@ -323,16 +318,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/Contract.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -413,6 +398,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/android/example/wordlistsql/WordListOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="164" column="37" lean-forward="true" selection-start-line="164" selection-start-column="37" selection-end-line="164" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

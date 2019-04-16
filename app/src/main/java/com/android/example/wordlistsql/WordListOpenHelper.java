@@ -87,7 +87,7 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
         // Create a container for the data.
         ContentValues values = new ContentValues();
 
-        for (int i=0; i < words.length;i++) {
+        for (int i=0; i < words.length; i++) {
             // Put column/value pairs into the container. put() overwrites existing values.
             values.put(KEY_WORD, words[i]);
             db.insert(WORD_LIST_TABLE, null, values);
@@ -156,16 +156,16 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
     /**
      * Adds a single word row/entry to the database.
      *
-     * @param  word New word.
+     * @param  values New word.
      * @return The id of the inserted word.
      */
-    public long insert(ContentValues word) {
+    public long insert(ContentValues values) {
         long newId = 0;
         //ContentValues values = new ContentValues();
         //values.put(KEY_WORD, word);
         try {
             if (mWritableDB == null) {mWritableDB = getWritableDatabase();}
-            //newId = mWritableDB.insert(WORD_LIST_TABLE, null, values);
+            newId = mWritableDB.insert(WORD_LIST_TABLE, null, values);
         } catch (Exception e) {
             Log.d(TAG, "INSERT EXCEPTION! " + e.getMessage());
         }
@@ -180,21 +180,22 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
      * @return The number of rows affected or -1 of nothing was updated.
      */
     public int update(int id, String word) {
-        int mNumberOfRowsUpdated = -1;
+        int updated = 0;
         try {
-            if (mWritableDB == null) {mWritableDB = getWritableDatabase();}
             ContentValues values = new ContentValues();
             values.put(KEY_WORD, word);
-
-            mNumberOfRowsUpdated = mWritableDB.update(WORD_LIST_TABLE, //table to change
+            if (mWritableDB == null) {
+                mWritableDB = getWritableDatabase();
+            }
+            updated = mWritableDB.update(WORD_LIST_TABLE, //table to change
                     values, // new values to insert
                     KEY_ID + " = ?", // selection criteria for row (in this case, the _id column)
                     new String[]{String.valueOf(id)}); //selection args; the actual value of the id
 
         } catch (Exception e) {
-            Log.d (TAG, "UPDATE EXCEPTION! " + e.getMessage());
+            Log.d (TAG, "UPDATE EXCEPTION " + e);
         }
-        return mNumberOfRowsUpdated;
+        return updated;
     }
 
     /**
